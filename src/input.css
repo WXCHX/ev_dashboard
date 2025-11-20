@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+.hide-scrollbar::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+    display: none; /* ซ่อนองค์ประกอบ Scrollbar */
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* คลาส Card Placeholder (จัดให้อยู่กึ่งกลาง) */
+.card-placeholder {
+    border: solid 2px #374151;
+    background-color: #1F2937;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    font-size: 1.5rem; /* ปรับขนาดฟอนต์ให้เล็กลงเพื่อให้กราฟชัด */
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* คลาสสำหรับ Checkbox */
+.checkbox-label {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}   
