@@ -33,3 +33,63 @@ body {
     padding: 0.5rem;
     border-radius: 0.5rem;
 }   
+
+/* เพิ่มใน <style> block ใน fullgraph.html */
+
+/* CARD HEADER STRUCTURE */
+.card-header-flex {
+    display: flex;
+    justify-content: space-between; /* justify-between */
+    align-items: center; /* items-center */
+    width: 100%; /* w-full */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+/* TEXT STYLES FOR HEADER */
+.text-main {
+    color: #fff; /* text-white */
+}
+.font-semibold {
+    font-weight: 600; 
+}
+.text-xl {
+    font-size: 1.25rem; 
+}
+
+/* CLOSE BUTTON */
+.btn-close-card {
+    color: #9CA3AF; /* text-gray-400 */
+    font-size: 1.5rem; /* text-2xl */
+    line-height: 1; /* leading-none */
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+.btn-close-card:hover {
+    color: #F87171; /* hover:text-red-400 */
+}
+
+/* CANVAS CONTAINER */
+.graph-canvas-container {
+    position: relative; /* relative */
+    width: 100%; /* w-full */
+    height: 100%; /* h-full */
+    padding: 0; /* p-0 */
+}
+
+/* ERROR MESSAGE */
+.graph-error-message {
+    display: none; /* เริ่มต้น hidden */
+    position: absolute; /* absolute */
+    top: 0; /* inset-0 */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EF4444; /* text-red-500 */
+    font-size: 0.875rem; /* text-sm */
+}
+/* .graph-error-message.show { display: flex; } (ใช้ใน JS สำหรับการแสดงผล error) */
